@@ -10,9 +10,11 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ActivityLifeCircle" />
             <option value="$PROJECT_DIR$/AndroidWeartest" />
+            <option value="$PROJECT_DIR$/PrintPDF" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/dynamicUI" />
             <option value="$PROJECT_DIR$/lib" />
+            <option value="$PROJECT_DIR$/mediaGalaryTest" />
             <option value="$PROJECT_DIR$/threadsample" />
           </set>
         </option>

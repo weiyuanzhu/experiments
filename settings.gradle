@@ -1,2 +1,2 @@
-include ':ActivityLifeCircle', ':dynamicUI', ':app', ':lib', ':AndroidWeartest'
+include ':ActivityLifeCircle', ':dynamicUI', ':app', ':lib', ':AndroidWeartest', ':PrintPDF', ':mediaGalaryTest'
 include ':threadsample'
