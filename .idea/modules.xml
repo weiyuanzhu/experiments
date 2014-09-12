@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ActivityLifeCircle/ActivityLifeCircle.iml" filepath="$PROJECT_DIR$/ActivityLifeCircle/ActivityLifeCircle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidWeartest/AndroidWeartest.iml" filepath="$PROJECT_DIR$/AndroidWeartest/AndroidWeartest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Experiments.iml" filepath="$PROJECT_DIR$/Experiments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamicUI/dynamicUI.iml" filepath="$PROJECT_DIR$/dynamicUI/dynamicUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threadsample/threadsample.iml" filepath="$PROJECT_DIR$/threadsample/threadsample.iml" />
+    </modules>
+  </component>
+</project>
+

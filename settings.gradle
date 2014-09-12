@@ -1,0 +1,2 @@
+include ':ActivityLifeCircle', ':dynamicUI', ':app', ':lib', ':AndroidWeartest'
+include ':threadsample'
