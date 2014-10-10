@@ -15,7 +15,9 @@
             <option value="$PROJECT_DIR$/dynamicUI" />
             <option value="$PROJECT_DIR$/lib" />
             <option value="$PROJECT_DIR$/mediaGalaryTest" />
+            <option value="$PROJECT_DIR$/sqlitetest" />
             <option value="$PROJECT_DIR$/threadsample" />
+            <option value="$PROJECT_DIR$/udptest" />
           </set>
         </option>
       </GradleProjectSettings>

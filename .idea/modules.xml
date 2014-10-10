@@ -10,7 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/dynamicUI/dynamicUI.iml" filepath="$PROJECT_DIR$/dynamicUI/dynamicUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/mediaGalaryTest/mediaGalaryTest.iml" filepath="$PROJECT_DIR$/mediaGalaryTest/mediaGalaryTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqlitetest/sqlitetest.iml" filepath="$PROJECT_DIR$/sqlitetest/sqlitetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/threadsample/threadsample.iml" filepath="$PROJECT_DIR$/threadsample/threadsample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/udptest/udptest.iml" filepath="$PROJECT_DIR$/udptest/udptest.iml" />
     </modules>
   </component>
 </project>
