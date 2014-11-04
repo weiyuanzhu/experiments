@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
 
@@ -19,12 +20,16 @@ public class MainActivity extends Activity {
 	
 	
 	private UDPClient udpClient = null;
+
+
+    private EditText ipEditText;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+        ipEditText = (EditText) findViewById(R.id.editText);
 	}
 
 	@Override
@@ -91,7 +96,7 @@ public class MainActivity extends Activity {
         if(udpClient==null) {
             udpClient = new UDPClient(FIND,"255.255.255.255");
         }
-        udpClient.singleIpSearch();
+        udpClient.singleIpSearch(ipEditText.getText().toString());
 
 
     }

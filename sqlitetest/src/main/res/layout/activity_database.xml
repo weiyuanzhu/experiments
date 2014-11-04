@@ -8,31 +8,72 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.mackwell.sqlitetest.DatabaseActivity">
 
-
-    <TableLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentTop="true"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Panel IP"
+        android:id="@+id/textView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentTop="true"
+        />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_margin="20dp">
-            <TextView
-                android:text="Product ID"
-                android:textAppearance="?android:attr/textAppearanceLarge"/>
-            <TextView
-                android:text="Id Not Assigned"
-                android:textAppearance="?android:attr/textAppearanceLarge"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_column="0">
-        </TableRow>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_marginLeft="30dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Panel Location"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
 
 
-        </TableLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Panel"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="addProduct"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/button2"
+        android:layout_above="@+id/listView"
+        android:layout_toRightOf="@+id/button"
+        android:onClick="deleteProduct"/>
+
+
 </RelativeLayout>

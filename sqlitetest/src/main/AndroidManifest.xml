@@ -10,15 +10,17 @@
         <activity
             android:name="com.mackwell.sqlitetest.SQLiteTestActivity"
             android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name="com.mackwell.sqlitetest.DatabaseActivity"
+            android:label="@string/title_activity_database" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="com.mackwell.sqlitetest.DatabaseActivity"
-            android:label="@string/title_activity_database" >
+
         </activity>
     </application>
 

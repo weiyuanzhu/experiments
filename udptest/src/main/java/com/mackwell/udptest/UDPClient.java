@@ -52,9 +52,9 @@ public class UDPClient{
 		
 	}
 
-    public void singleIpSearch(){
+    public void singleIpSearch(String ip){
         ExecutorService exec = Executors.newCachedThreadPool();
-        Thread t = new Thread(new SingleIpSearch("192.168.1.17"));
+        Thread t = new Thread(new SingleIpSearch(ip));
         exec.execute(t);
     }
 	
@@ -243,10 +243,9 @@ public class UDPClient{
         }
 
 
-        public void run()
-        {
+        public void run(){
             try {
-                InetAddress address = InetAddress.getByName("192.168.1.17");
+                //InetAddress address = InetAddress.getByName(ipAddres);
 
                 //byte[] test = new byte[] {83,69,84,84,0, 8, -36, 21, -87, 30,1,-64, -88, 1, 17, -1, -1, -1, 0, -64, -88, 1, 17, 1, -12, 0, 0, 0, 0, 0, 0, -1, 8, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 10};
 
@@ -260,8 +259,6 @@ public class UDPClient{
 
 
             } catch (SocketException e) {
-                e.printStackTrace();
-            } catch (UnknownHostException e) {
                 e.printStackTrace();
             }
 
@@ -291,6 +288,7 @@ public class UDPClient{
 
 								}*/
 
+
                         panelList.add(buffer);
 
                         System.out.println();
@@ -298,6 +296,8 @@ public class UDPClient{
                         {
                             System.out.print(j+" ");
                         }
+                        System.out.println();
+
 
 
 

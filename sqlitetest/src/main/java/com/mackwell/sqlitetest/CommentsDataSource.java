@@ -76,4 +76,5 @@ public class CommentsDataSource {
         comment.setComment(cursor.getString(1));
         return comment;
     }
+
 }
