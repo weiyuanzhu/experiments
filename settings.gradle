@@ -1,2 +1,2 @@
-include ':ActivityLifeCircle', ':dynamicUI', ':app', ':lib', ':AndroidWeartest', ':PrintPDF', ':mediaGalaryTest', ':udptest', ':sqlitetest', ':SystemSettingTest'
+include ':ActivityLifeCircle', ':dynamicUI', ':app', ':lib', ':AndroidWeartest', ':PrintPDF', ':mediaGalaryTest', ':udptest', ':sqlitetest', ':SystemSettingTest', ':wifi_p2p', ':wifi_direct_server'
 include ':threadsample'
