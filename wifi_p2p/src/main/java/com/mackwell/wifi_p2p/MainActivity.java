@@ -20,7 +20,9 @@ import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -29,14 +31,18 @@ public class MainActivity extends ActionBarActivity {
 
     ListView peerListView;
     ArrayAdapter<String> mAdapter;
+    SimpleAdapter mSimpleAdapter;
     List<String> peerNames;
+    List<Map<String,String>> mDataList;
 
     WifiP2pManager mManager;
     WifiP2pManager.Channel mChannel;
     BroadcastReceiver mReceiver;
     IntentFilter mIntentFilter;
 
-    private List peers = new ArrayList();
+    private List<WifiP2pDevice> peers;
+
+
 
 
     public void setPeers(List peers) {
@@ -45,13 +51,64 @@ public class MainActivity extends ActionBarActivity {
 
         for(int i =0; i<peers.size();i++)
         {
-            WifiP2pDevice  device = (WifiP2pDevice) peers.get(i);
+            WifiP2pDevice device = (WifiP2pDevice) peers.get(i);
             peerNames.add(i, device.deviceName);
         }
 
-        mAdapter.notifyDataSetChanged();
+
+        updatemDataList();
+        mSimpleAdapter.notifyDataSetChanged();
+//        mSimpleAdapter = new SimpleAdapter(this, mDataList,android.R.layout.simple_list_item_activated_2,new String[]{"deviceName","deviceStatus"},new int[]{android.R.id.text1,android.R.id.text2});
+//        peerListView.setAdapter(mSimpleAdapter);
+
         Log.d(TAG, peers.toString());
     }
+
+    private void updatemDataList(){
+//        List dataList = new ArrayList<Map<String,String>>();
+        if(mDataList==null){
+            mDataList = new ArrayList<Map<String, String>>();
+        }else   mDataList.clear();
+
+        Map map;
+
+        /*map = new HashMap<String,String>();
+
+        map.put("deviceName","test1");
+        map.put("deviceStatus","1");
+        mDataList.add(map);
+
+        map = new HashMap<String,String>();
+
+        map.put("deviceName","test2");
+        map.put("deviceStatus","2");
+        mDataList.add(map);*/
+
+        for(int i=0; i<peers.size();i++){
+
+            map = new HashMap<String,String>();
+            WifiP2pDevice  device = (WifiP2pDevice) peers.get(i);
+            map.put("deviceName",device.deviceName);
+            switch(device.status){
+                case 0: map.put("deviceStatus","CONNECTED");
+                    break;
+                case 1: map.put("deviceStatus","INVITED");
+                    break;
+                case 2: map.put("deviceStatus","FAILED");
+                    break;
+                case 3: map.put("deviceStatus","AVAILABLE");
+                    break;
+                case 4: map.put("deviceStatus","UNAVAILABLE");
+                    break;
+                default: break;
+
+            }
+            mDataList.add(map);
+        }
+
+
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,8 +117,13 @@ public class MainActivity extends ActionBarActivity {
 
         peerListView = (ListView) findViewById(R.id.peerListView);
         peerNames = new ArrayList<String>();
+        peers = new ArrayList<WifiP2pDevice>();
+        updatemDataList();
+
         mAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_single_choice,peerNames);
-        peerListView.setAdapter(mAdapter);
+        mSimpleAdapter = new SimpleAdapter(this, mDataList,android.R.layout.simple_list_item_activated_2,new String[]{"deviceName","deviceStatus"},new int[]{android.R.id.text1,android.R.id.text2});
+
+        peerListView.setAdapter(mSimpleAdapter);
         peerListView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         peerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -119,8 +181,10 @@ public class MainActivity extends ActionBarActivity {
     public void discoverPeer(View view)
     {
         peers.clear();
+        mDataList.clear();
         peerNames.clear();
         mAdapter.notifyDataSetChanged();
+        mSimpleAdapter.notifyDataSetChanged();
 
         mManager.discoverPeers(mChannel, new WifiP2pManager.ActionListener() {
             @Override
