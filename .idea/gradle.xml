@@ -21,6 +21,7 @@
             <option value="$PROJECT_DIR$/udptest" />
             <option value="$PROJECT_DIR$/wifi_direct_server" />
             <option value="$PROJECT_DIR$/wifi_p2p" />
+            <option value="$PROJECT_DIR$/wifi_p2p_file_server" />
           </set>
         </option>
       </GradleProjectSettings>

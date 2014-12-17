@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ActivityLifeCircle/ActivityLifeCircle.iml" filepath="$PROJECT_DIR$/ActivityLifeCircle/ActivityLifeCircle.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidWeartest/AndroidWeartest.iml" filepath="$PROJECT_DIR$/AndroidWeartest/AndroidWeartest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Experiments.iml" filepath="$PROJECT_DIR$/Experiments.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrintPDF/PrintPDF.iml" filepath="$PROJECT_DIR$/PrintPDF/PrintPDF.iml" />
       <module fileurl="file://$PROJECT_DIR$/SystemSettingTest/SystemSettingTest.iml" filepath="$PROJECT_DIR$/SystemSettingTest/SystemSettingTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
@@ -16,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/udptest/udptest.iml" filepath="$PROJECT_DIR$/udptest/udptest.iml" />
       <module fileurl="file://$PROJECT_DIR$/wifi_direct_server/wifi_direct_server.iml" filepath="$PROJECT_DIR$/wifi_direct_server/wifi_direct_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/wifi_p2p/wifi_p2p.iml" filepath="$PROJECT_DIR$/wifi_p2p/wifi_p2p.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wifi_p2p_file_server/wifi_p2p_file_server.iml" filepath="$PROJECT_DIR$/wifi_p2p_file_server/wifi_p2p_file_server.iml" />
     </modules>
   </component>
 </project>
