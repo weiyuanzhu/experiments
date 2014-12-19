@@ -252,7 +252,8 @@ public class MainActivity extends ActionBarActivity {
 
     public void disconnect(View view)
     {
-//        mManager.dis
+//        System.out.println("123");
+//        mManager.cancelConnect(mChannel,null);
     }
 
 

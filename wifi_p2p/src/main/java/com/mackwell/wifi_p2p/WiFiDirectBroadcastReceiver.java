@@ -95,6 +95,13 @@ public class WiFiDirectBroadcastReceiver extends BroadcastReceiver {
             }else {
                 Log.d(TAG,"Device connected");
                 Toast.makeText(mActivity,"Device connected",Toast.LENGTH_SHORT).show();
+
+                mManager.requestConnectionInfo(mChannel,new WifiP2pManager.ConnectionInfoListener() {
+                    @Override
+                    public void onConnectionInfoAvailable(WifiP2pInfo wifiP2pInfo) {
+                        Toast.makeText(mActivity,"Group owner IP: " + wifiP2pInfo.groupOwnerAddress + "Is Group owner: " + wifiP2pInfo.isGroupOwner, Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
 
             // Respond to new connection or disconnections
