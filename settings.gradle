@@ -1,2 +1,2 @@
-include ':ActivityLifeCircle', ':dynamicUI', ':app', ':lib', ':AndroidWeartest', ':PrintPDF', ':mediaGalaryTest', ':udptest', ':sqlitetest', ':SystemSettingTest', ':wifi_p2p', ':wifi_direct_server', ':threadsample', ':wifi_p2p_file_server'
+include ':ActivityLifeCircle', ':dynamicUI', ':app', ':lib', ':AndroidWeartest', ':PrintPDF', ':mediaGalaryTest', ':udptest', ':sqlitetest', ':SystemSettingTest', ':wifi_p2p', ':wifi_direct_server', ':threadsample', ':wifi_p2p_file_server', ':wifi_direct_file_client', ':wifi_direct_client'
 

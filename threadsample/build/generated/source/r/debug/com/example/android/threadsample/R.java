@@ -9,11 +9,7 @@ package com.example.android.threadsample;
 
 public final class R {
     public static final class attr {
-        /** 
-             The sibling to hide after the image is downloaded 
-             and show when the image is being downloaded
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int hideShowSibling=0x7f010000;
@@ -71,10 +67,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ImageDownloaderView_hideShowSibling com.example.android.threadsample:hideShowSibling}</code></td><td>
-             The sibling to hide after the image is downloaded 
-             and show when the image is being downloaded
-        </td></tr>
+           <tr><td><code>{@link #ImageDownloaderView_hideShowSibling com.example.android.threadsample:hideShowSibling}</code></td><td></td></tr>
            </table>
            @see #ImageDownloaderView_hideShowSibling
          */
@@ -82,17 +75,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010000
         };
         /**
-          <p>
-          @attr description
-          
-             The sibling to hide after the image is downloaded 
-             and show when the image is being downloaded
-        
+          <p>This symbol is the offset where the {@link com.example.android.threadsample.R.attr#hideShowSibling}
+          attribute's value can be found in the {@link #ImageDownloaderView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name com.example.android.threadsample:hideShowSibling
         */
         public static final int ImageDownloaderView_hideShowSibling = 0;

@@ -14,6 +14,8 @@
       <module fileurl="file://$PROJECT_DIR$/sqlitetest/sqlitetest.iml" filepath="$PROJECT_DIR$/sqlitetest/sqlitetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/threadsample/threadsample.iml" filepath="$PROJECT_DIR$/threadsample/threadsample.iml" />
       <module fileurl="file://$PROJECT_DIR$/udptest/udptest.iml" filepath="$PROJECT_DIR$/udptest/udptest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wifi_direct_client/wifi_direct_client.iml" filepath="$PROJECT_DIR$/wifi_direct_client/wifi_direct_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wifi_direct_file_client/wifi_direct_file_client.iml" filepath="$PROJECT_DIR$/wifi_direct_file_client/wifi_direct_file_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/wifi_direct_server/wifi_direct_server.iml" filepath="$PROJECT_DIR$/wifi_direct_server/wifi_direct_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/wifi_p2p/wifi_p2p.iml" filepath="$PROJECT_DIR$/wifi_p2p/wifi_p2p.iml" />
       <module fileurl="file://$PROJECT_DIR$/wifi_p2p_file_server/wifi_p2p_file_server.iml" filepath="$PROJECT_DIR$/wifi_p2p_file_server/wifi_p2p_file_server.iml" />

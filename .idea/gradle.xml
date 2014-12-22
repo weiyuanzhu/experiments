@@ -20,6 +20,8 @@
             <option value="$PROJECT_DIR$/sqlitetest" />
             <option value="$PROJECT_DIR$/threadsample" />
             <option value="$PROJECT_DIR$/udptest" />
+            <option value="$PROJECT_DIR$/wifi_direct_client" />
+            <option value="$PROJECT_DIR$/wifi_direct_file_client" />
             <option value="$PROJECT_DIR$/wifi_direct_server" />
             <option value="$PROJECT_DIR$/wifi_p2p" />
             <option value="$PROJECT_DIR$/wifi_p2p_file_server" />
