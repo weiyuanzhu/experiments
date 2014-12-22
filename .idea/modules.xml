@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ActivityLifeCircle/ActivityLifeCircle.iml" filepath="$PROJECT_DIR$/ActivityLifeCircle/ActivityLifeCircle.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidWeartest/AndroidWeartest.iml" filepath="$PROJECT_DIR$/AndroidWeartest/AndroidWeartest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Experiments.iml" filepath="$PROJECT_DIR$/Experiments.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrintPDF/PrintPDF.iml" filepath="$PROJECT_DIR$/PrintPDF/PrintPDF.iml" />
       <module fileurl="file://$PROJECT_DIR$/SystemSettingTest/SystemSettingTest.iml" filepath="$PROJECT_DIR$/SystemSettingTest/SystemSettingTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
